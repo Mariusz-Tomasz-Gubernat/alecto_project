@@ -1,0 +1,163 @@
+.pricing {
+  background-color: $section-bgc;
+  padding: 112px 0;
+
+  .section-subtitle {
+    margin-bottom: 107px;
+    position: relative;
+  }
+
+  .wrapper-pricing-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .pricing-column {
+      width: 23%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      box-shadow: $pricing-col-box-shadow;
+      border-radius: 5px;
+      background-color: $pricing-col-bgc;
+
+      .price {
+        padding-left: 34px;
+        padding-top: 30px;
+        color: $price-color;
+        font-family: $font-third;
+        font-size: 60px;
+        line-height: 96px;
+        letter-spacing: 1.5px;
+      }
+
+      .column-pricing-title {
+        padding-left: 34px;
+        position: relative;
+        opacity: 0.45;
+        color: $col-pricing-title;
+        font-family: $font-primary;
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: 0.45px;
+      }
+
+      .column-pricing-title::before {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $col-pricing-title-before;
+      }
+
+      .column-pricing-text {
+        padding: 60px 15px 75px 34px;
+        color: $col-pricing-text-color;
+        font-family: $font-primary;
+        font-size: 18px;
+        line-height: 48px;
+        letter-spacing: 0.45px;
+      }
+
+      .pricing-button {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        color: $pricing-button-color;
+        font-family: $font-primary;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.45px;
+        text-decoration: none;
+
+        .fa-shopping-cart {
+          padding-left: 20px;
+        }
+
+
+
+        .pricing-button-item {
+          position: relative;
+          padding: 10px;
+          width: 100%;
+          padding-left: 35px;
+          background-color: $btn-bgc;
+          overflow: hidden;
+          transition: .3s;
+          text-align: center;
+
+        }
+
+        .pricing-button-item:hover {
+          color: $pricing-button-hover-color;
+        }
+
+        .pricing-button-item::before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: -18px;
+          left: -10px;
+          height: 110px;
+          width: 30px;
+          transform: rotate(15deg);
+          background-color: $pricing-button-bgc;
+          animation: price-btn-before 1.3s linear infinite;
+        }
+      }
+
+      /**************************************  PRICING MEDIA **********************************************/
+
+      @keyframes price-btn-before {
+        0% {
+          top: -18px;
+          left: -10%;
+        }
+
+        100% {
+          top: -18px;
+          left: 110%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1030px) {
+  .pricing {
+    .section-subtitle {
+      margin-bottom: 20px;
+    }
+
+    .wrapper-pricing-column {
+      .pricing-column {
+        margin-top: 100px;
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media(max-width:640px) {
+  .pricing {
+    .section-subtitle {
+      line-height: 40px;
+      margin-top: 40px;
+    }
+
+    .wrapper-pricing-column {
+      .pricing-column {
+        width: 80%;
+      }
+    }
+  }
+}

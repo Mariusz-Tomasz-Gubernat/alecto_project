@@ -1,0 +1,124 @@
+header {
+  height: 100vh;
+  position: relative;
+
+  .header-bgi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wrapper-header-text {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $header-text;
+    font-family: $fontMyriadPro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+
+    .header-title {
+      font-size: 50px;
+      font-weight: 100;
+      letter-spacing: 1.5px;
+      font-family: "Raleway - Thin";
+
+      span {
+        font-family: $font-primary;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+      }
+    }
+
+    .header-subtitle {
+      letter-spacing: 0.6px;
+    }
+
+    .button-one {
+      margin-top: 40px;
+      border: 2px solid $header-text;
+      transition: .3s linear;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 40px;
+    left: 15%;
+  }
+
+  .button-one:hover {
+    background-color: $header-btn-hover;
+    transform: scale(1.1);
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width:840px) and (orientation:landscape) {
+  header {
+    .logo {
+      top: 30px;
+      left: 13%;
+      width: 20;
+      height: 80;
+    }
+
+    .wrapper-header-text {
+      top: 60%;
+
+      .header-title {
+        font-size: 30px;
+
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .header-subtitle {
+        margin-bottom: 0;
+        font-size: 16px;
+        padding: 0 10px
+      }
+
+      .button-one {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/**************************************  HEADER MEDIA  **********************************************/
+
+@media(max-width:670px) {
+  header {
+    .logo {
+      display: none
+    }
+
+    .wrapper-header-text {
+      .header-title {
+        font-size: 30px;
+
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .header-subtitle {
+        font-size: 16px;
+        padding: 0 10px
+      }
+
+      .button-one {
+        margin-top: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+footer {
+  position: relative;
+
+  .logo-footer {
+    transform: translateY(6px);
+    margin: 0 21px 0 150px;
+  }
+
+  .footer-bgi {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    z-index: -1;
+  }
+
+  .footer-text {
+    color: $fotter-text-color;
+    font-family: $font-primary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 0.45px;
+    padding-top: 25px;
+  }
+}
+
+/**************************************  FOOTER MEDIA  **********************************************/
+@media(max-width:640px) {
+  footer {
+    .logo-footer {
+      transform: translateY(6px);
+      margin: 0 21px 0 15px;
+    }
+
+    h3 {
+      padding-top: 10px;
+    }
+  }
+}

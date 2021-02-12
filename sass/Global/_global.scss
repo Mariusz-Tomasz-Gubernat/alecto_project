@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: $body-bgc;
+  scroll-behavior: smooth;
+}
+
+.section-title,
+.section-subtitle {
+  line-height: 96px;
+  text-align: center;
+  font-family: $font-primary;
+}
+
+.section-title {
+  position: relative;
+  color: $section-title-color;
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.section-title::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 1px;
+  background-color: $btn-bgc;
+}
+
+.section-subtitle {
+  color: $primary;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+}
+
+.button {
+  padding: 15px 45px;
+  display: inline-block;
+  color: $header-text;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.button::selection {
+  background-color: transparent;
+}
+
+.button {
+  padding: 15px 50px;
+  display: inline-block;
+  color: $header-text;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.button::selection {
+  background-color: transparent;
+}
+
+.button-two {
+  background-color: $btn-bgc;
+  transition: .3s;
+}
+
+.button-two:hover {
+  background-color: $btn-two-hover-bgc;
+  color: $btn-two-hover-color;
+  font-size: 18px;
+  transform: scale(1.1);
+}
+
+/**************************************  GLOBAL MEDIA  **********************************************/
+
+@media (max-width:800px) {
+  .section-subtitle {
+    padding: 0 20px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width:660px) {
+  .section-title {
+    font-size: 50px;
+  }
+}

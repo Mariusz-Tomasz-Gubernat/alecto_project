@@ -1,0 +1,56 @@
+$header-text:#ffffff;
+$header-btn-hover:#01b493;
+$btn-bgc:#17daa3;
+$primary:#87949e;
+$section-title-color:#576671;
+$black:#000000;
+$section-bgc:#edeff1;
+
+$body-bgc:#f5f5f5;
+
+$btn-two-hover-bgc: #4169e1;
+$btn-two-hover-color:#ffd700;
+
+$pop-up-bgc:#05668d;
+$pop-up-color:#ebf2fa;
+$pop-up-selection-bgc:#ffd700;
+$pop-up-selection-color:#4169e1;
+$close-times-pop-up:#f5f5f5;
+
+$about-background-image-bgc:#87949e26;
+$about-background-image-color:#87949e;
+$about-col-content-color:#87949e;
+
+$pricing-col-box-shadow:0 0 35px #e3e3e3a6;
+$pricing-col-bgc:#ffffff;
+$price-color:#17daa3;
+$col-pricing-title:#87949e;
+$col-pricing-title-before:#778899;
+$col-pricing-text-color:#87949e;
+$pricing-button-color:#ffffff;
+$pricing-button-bgc:#ffffff33;
+$pricing-button-hover-color:#daa520;
+
+$photo_text-box-shadow-img:0 0 1em #778899;
+
+$services-column-title-color:#576671;
+$services-column-content-color:#87949e;
+
+$fotter-text-color:#87949e;
+
+$font-primary:'Raleway',
+sans-serif;
+$font-third:"Raleway - Extra Light";
+$font-secondary:'myriad-pro-condensed',
+sans-serif;
+$fontMyriadPro:'myriad-pro',
+sans-serif;
+$fontSignika:'Signika',
+sans-serif;
+
+
+@mixin centre {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

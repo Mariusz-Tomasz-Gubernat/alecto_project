@@ -1,0 +1,128 @@
+.about-us {
+  text-align: center;
+
+  .section-title {
+    margin-top: 110px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 126px;
+  }
+
+  .button-two {
+    cursor: pointer;
+    margin-top: 105px;
+  }
+
+  .wrapper-about-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .column-about {
+      display: flex;
+      flex-direction: column;
+      width: 22%;
+      cursor: default;
+
+      p::selection,
+      h3::selection {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+
+      h3 {
+        color: $black;
+        font-family: $fontMyriadPro;
+        font-size: 30px;
+        line-height: 96px;
+        text-align: center;
+        letter-spacing: 0.75px;
+      }
+
+      p {
+        color: $about-col-content-color;
+        font-family: $font-primary;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.45px;
+      }
+
+      .background-image {
+        display: flex;
+        align-self: center;
+        width: 182px;
+        height: 182px;
+        background-color: $about-background-image-bgc;
+        border-radius: 50%;
+        position: relative;
+        color: $about-background-image-color;
+        transition: .5s;
+
+        .fas,
+        .fab {
+          position: absolute;
+          @include centre;
+          font-size: 50px;
+          transition: .4s;
+        }
+      }
+    }
+  }
+
+  .wrapper-about-two {
+    display: none;
+    margin-top: 150px;
+  }
+
+  .btn-nonActive {
+    display: none;
+  }
+
+  .wrapper-about-two.active {
+    display: flex;
+  }
+}
+
+
+
+/**************************************  ABOUT MEDIA  **********************************************/
+
+@media(max-width:1030px) {
+  .about-us {
+    .wrapper-about-columns {
+      margin-top: -100px;
+
+      .column-about {
+        width: 42%;
+        margin-top: 100px;
+      }
+    }
+
+    .wrapper-about-two {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media(max-width:775px) {
+  .about-us {
+    .section-subtitle {
+      padding: 0 50px;
+      line-height: 50px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media(max-width:640px) {
+  .about-us {
+    .wrapper-about-columns {
+
+      .column-about {
+        width: 80%;
+      }
+    }
+  }
+}

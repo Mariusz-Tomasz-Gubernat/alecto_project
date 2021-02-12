@@ -1,0 +1,80 @@
+.advertisement {
+  position: relative;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .wrapper-advertisement-text {
+    width: 100%;
+    position: absolute;
+    @include centre();
+    text-align: center;
+    font-family: $font-primary;
+
+    .advertisement-text {
+      color: $header-text;
+      font-size: 60px;
+      line-height: 96px;
+      font-weight: 200;
+      letter-spacing: 1.5px;
+
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .button {
+      color: $header-text;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.35px;
+      text-decoration: none;
+    }
+  }
+}
+
+/**************************************  ADVERTISEMENT MEDIA  **********************************************/
+
+@media (max-width:1000px) and (orientation:landscape) {
+  .advertisement {
+    .wrapper-advertisement-text {
+      .advertisement-text {
+        font-size: 30px;
+        line-height: 70px;
+      }
+
+      .button {
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
+@media (max-width:640px) {
+  .advertisement {
+    .wrapper-advertisement-text {
+      .advertisement-text {
+        font-size: 20px;
+        line-height: 40px;
+      }
+
+      .button {
+        padding: 8px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width:360px) {
+  .advertisement {
+    .wrapper-advertisement-text {
+      .advertisement-text {
+        font-size: 18px;
+      }
+    }
+  }
+}
