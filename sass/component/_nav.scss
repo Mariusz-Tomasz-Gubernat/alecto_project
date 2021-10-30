@@ -83,6 +83,15 @@
   }
 }
 
+@keyframes hideMenu {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -49%;
+  }
+}
 
 .fa-bars {
   z-index: 5;
